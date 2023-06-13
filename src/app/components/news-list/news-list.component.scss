@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
   }
-  &__logo {
+  &__text {
     @include text-info(20px, 400, 130%)
   }
   &__open {
@@ -24,6 +24,7 @@
     margin-left: auto;
     margin-right: auto;
     &__title {
+      margin-bottom: 2.5rem;
       @include text-info(64px, 700, 150%)
     }
   }
@@ -68,3 +69,76 @@ p {
   }
 }
 
+@media (max-width: 1525px) {
+  .header {
+    padding: 1.5rem 15.1875rem 1.5rem 15.625rem;
+  }
+  .main {
+    &-container {
+      max-width: 59.5rem;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 1.5rem 2.1875rem 1.5rem 2.625rem;
+  }
+  .current-info {
+    max-width: 49.5rem;
+
+    &__header {
+      font-size: 60px;
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .main {
+    &-container {
+      max-width: 29rem;
+      &__title {
+        @include text-info(56px, 700, 100%);
+      }
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .current-info {
+    max-width: 30.5rem;
+    &__header {
+      font-size: 42px;
+    }
+    &__img {
+      height: 21.4375rem;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .main {
+    &-container {
+      max-width: 21.4375rem;
+      &__title {
+        @include text-info(32px, 700, 100%);
+      }
+    }
+  }
+  .header {
+    padding: 1.5rem 2.1875rem 1.5rem 0.625rem;
+    &__open {
+      visibility: hidden;
+    }
+    &__text {
+      font-size: 16px;
+    }
+
+  }
+  .current-info {
+    max-width: 21.4375rem;
+    &__header {
+      font-size: 32px;
+    }
+  }
+}

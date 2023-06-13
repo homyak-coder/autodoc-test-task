@@ -2,7 +2,6 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import {NewsRestService} from "../../services/news-rest.service";
 import {INews, INewsItem} from "../../interfaces/INews";
 import {catchError, forkJoin, mergeMap, of, Subject, takeUntil} from "rxjs";
-import {Location} from "@angular/common";
 
 @Component({
   selector: 'autospot-news-list',

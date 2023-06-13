@@ -1,4 +1,4 @@
-@import "../../../styles";
+@import "../../../../styles";
 .modal {
   position: fixed;
   top: 0;
@@ -111,5 +111,21 @@
 
 .modal__file input[type="file"] {
   display: none;
+}
+
+@media (max-width: 1024px) {
+  .modal {
+    &-container {
+      max-width: 39.5rem;
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .modal {
+    &-container {
+      max-width: 21.4375rem;
+    }
+  }
 }
 
